@@ -1,0 +1,31 @@
+/* style.css */
+body { margin: 0; overflow: hidden; font-family: sans-serif; }
+#toolbar { 
+    position: absolute; top: 10; left: 10; z-index: 10; 
+    background: white; padding: 10px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+canvas { display: block; cursor: crosshair; background: #fafafa; }
+
+.cursor {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    border-radius: 50%;
+    pointer-events: none; /* Allows drawing "through" the cursor div */
+    transition: transform 0.1s linear;
+    z-index: 5;
+}
+.cursor-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 10px;
+    background: rgba(0,0,0,0.7);
+    color: white;
+    padding: 2px 5px;
+    white-space: nowrap;
+}
+.cursor {
+    pointer-events: none; /* Crucial: allows clicks to pass through to the canvas */
+}

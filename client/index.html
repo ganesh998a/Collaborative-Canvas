@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Collaborative Canvas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="toolbar">
+        <button id="brushBtn" class="active">🖌️ Brush</button>
+        <button id="eraserBtn">🧽 Eraser</button>
+        <input type="color" id="colorPicker" value="#000000">
+        <input type="range" id="sizePicker" min="1" max="50" value="5">
+        <button id="undoBtn">↩️ Undo</button>
+        <button id="clearBtn" style="color: red;">🗑️ Clear All</button>
+    </div>
+    <canvas id="paintCanvas"></canvas>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
